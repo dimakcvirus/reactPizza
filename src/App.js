@@ -1,9 +1,13 @@
 import React from "react";
 import Header from './Header'; // импот функции Header
+import Button from "./Button";
+
 function App() {
   return (
     <div className="wrapper">
      <Header/>
+    <Button/>
+    <Button className text="Кнопка"/>
       <div className="content">
         <div className="container">
           <div className="content__top">
