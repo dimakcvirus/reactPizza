@@ -17,3 +17,17 @@
 [] Пропсы это свойства
 
 [] this это обращение к целому классу
+
+[] посмотреть что такое библеотка classNames  как она работает 
+
+[] const Button = () => {
+                                вот так вот пишется анонимная функция
+}
+
+
+[] <button 
+        classNames={classNames('button',{
+            'button--outline' : this.props.outline,             что такое : 
+        })}>
+        {this.props.children}
+        </button>
