@@ -1,3 +1,12 @@
+[] как пользоваться гитом
+1: git init
+2:git add --all
+3: git commit -m " имя коммита "
+4:git push -u origni main
+
+
+
+
 [] import React from "react";  // при создании какого либо импорта нужно прописывать 
 к чему он относится. 
 
