@@ -1,26 +1,25 @@
 import React from "react";
-import Header from './Header'; // импот функции Header
-import Button from "./Button";
+import { Categories,Header } from "./components";
+
+
 
 function App() {
+
+  const clickPoKnopke = () =>{
+    alert('hell');
+  };
+  
+
+
+
   return (
     <div className="wrapper">
      <Header/>
-    <Button/>
-    <Button className text="Кнопка"/>
+    {/* <Button onClick={clickPoKnopke} test>123</Button>  3 видос на 25:56 рассказывают как прокидовать пропсы с кнопками*/}
       <div className="content">
         <div className="container">
           <div className="content__top">
-            <div className="categories">
-              <ul>
-                <li className="active">Все</li>
-                <li>Мясные</li>
-                <li>Вегетарианская</li>
-                <li>Гриль</li>
-                <li>Острые</li>
-                <li>Закрытые</li>
-              </ul>
-            </div>
+           <Categories items={['Мясные','Вегитарианская','Гриль','Острые','Закрытые',]}/>
             <div className="sort">
               <div className="sort__label">
                 <svg

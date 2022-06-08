@@ -1,7 +1,8 @@
 
 
 import React from 'react';  //Узнать требуется ли этот импорт если и без него все прекрасно работает
-import logoSvg from './assets/Img/pizza-logo.svg' //импорт картинки
+import logoSvg from '../assets/Img/pizza-logo.svg' //импорт картинки
+import Button from './Button';
 
 
 function Header(){
@@ -16,8 +17,8 @@ function Header(){
             </div>
           </div>
           <div className="header__cart">
-            <a href="/cart.html" className="button button--cart">
-              <span>520 ₽</span>
+          <Button className="button--cart">
+          <span>520 ₽</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"
@@ -48,8 +49,8 @@ function Header(){
                   strokeLinejoin="round"
                 />
               </svg>
-              <span>3</span>
-            </a>
+              <span>3</span>  
+          </Button>
           </div>
         </div>
       </div>
